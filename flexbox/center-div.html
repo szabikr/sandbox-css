@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Div in the middle of page</title>
+    <style>
+      body, html {
+        padding: 0px;
+        margin: 0px;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      
+      .container div {
+        background-color: violet;
+        padding: 24px 32px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>I'm in the middle of page</div>
+    </div>
+  </body>
+</html>
