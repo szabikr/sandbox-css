@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Center divs</title>
+    <style>
+      /* 
+        Center block element and other
+        ==============================
+      */
+      h1 {
+        text-align: center;
+      }
+
+      /*
+        Center div horrizontally on the screen
+        ======================================
+      */
+      .horrizontally-centered {
+        display: inline-block; /* Makes the div don't take up more space than its content */
+        color: powderblue;
+        background-color: slateblue;
+        padding: 12px 16px;
+        margin-bottom: 16px;
+      }
+
+      .horrizontally-centered-container {
+        text-align: center;
+      }
+
+      /*
+        Center child div horrizontally and vertically in parent div
+        ===========================================================
+      */
+      .parent {
+        display: flex;
+        height: 300px;
+        background-color: thistle;
+      }
+
+      .child {
+        width: 300px;
+        height: 200px;
+        background-color: slateblue;
+        margin: auto;
+      }
+
+      .child span {
+        display: block;
+        color: powderblue;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Center divs</h1>
+		
+		<div class="horrizontally-centered-container">
+			<div class="horrizontally-centered">center me horrizontally</div>
+		</div>
+
+		<div class="parent">
+			<div class="child">
+				<span>child div center of parent</span>
+			</div>
+		</div>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Flexbox Sandbox</title>
+		<style>
+      /* 
+        Center block element and other
+        ==============================
+      */
+      h1, p {
+        text-align: center;
+      }
+
+      p.reference {
+        font-style: italic;
+      }
+      /*
+        Items evently distributed on the horizontal axis
+        ================================================
+      */
+      .flex-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+
+        /* Removing all the predefined ul properties */
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .flex-item {
+        background-color: tomato;
+        color: white;
+
+        width: 200px;
+        height: 150px;
+        
+        padding: 5px;
+        margin-top: 10px;
+        
+        text-align: center;
+        font-weight: bold;
+        font-size: 3em;
+        line-height: 150px;
+      }
+    </style>
+	</head>
+	<body>
+		<h1>Evenly distributed items</h1>
+		<p class="reference">
+			reference: 
+			<a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#examples">
+				https://css-tricks.com/snippets/css/a-guide-to-flexbox/#examples
+			</a>
+		</p>
+		<ul class="flex-container">
+			<li class="flex-item">1</li>
+			<li class="flex-item">2</li>
+			<li class="flex-item">3</li>
+			<li class="flex-item">4</li>
+			<li class="flex-item">5</li>
+			<li class="flex-item">6</li>
+		</ul>
+	</body>
+</html>

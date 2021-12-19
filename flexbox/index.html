@@ -2,35 +2,44 @@
 <html>
 	<head>
 		<title>Flexbox Sandbox</title>
-		<link rel="stylesheet" href="style.css"></style>
+		<style>
+			h1 {
+				text-align: center;
+			}
+
+			.container { 
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: center;
+			}
+
+			.container a {
+				background-color: aquamarine;
+				color:darkslategray;
+
+				text-decoration: none;
+				text-align: center;
+				line-height: 240px;
+				font-size: 1.2em;
+
+				width: 360px;
+				height: 240px;
+
+				margin: 12px;
+			}
+
+			.container a:hover {
+				background-color: darkcyan;
+				color: white;
+			}
+		</style>
 	</head>
 	<body>
-		<h1>Center divs</h1>
-		
-		<div class="horrizontally-centered-container">
-			<div class="horrizontally-centered">center me horrizontally</div>
+		<h1>Flexbox Sandbox</h1>
+		<div class="container">
+			<a href="center-div-middle-of-screen.html">Div centered in the middle of the screen</a>
+			<a href="center-divs.html">Divs centered</a>
+			<a href="evenly-distributed-items.html">Evenly distributed items on the page</a>
 		</div>
-
-		<div class="parent">
-			<div class="child">
-				<span>child div center of parent</span>
-			</div>
-		</div>
-
-		<h1>Evenly distributed items</h1>
-		<p class="reference">
-			reference: 
-			<a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#examples">
-				https://css-tricks.com/snippets/css/a-guide-to-flexbox/#examples
-			</a>
-		</p>
-		<ul class="flex-container">
-			<li class="flex-item">1</li>
-			<li class="flex-item">2</li>
-			<li class="flex-item">3</li>
-			<li class="flex-item">4</li>
-			<li class="flex-item">5</li>
-			<li class="flex-item">6</li>
-		</ul>
 	</body>
 </html>
