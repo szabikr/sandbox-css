@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
     <title>Center divs</title>
     <style>
-      /* 
-        Center block element and other
-        ==============================
-      */
       h1 {
         text-align: center;
       }
 
-      /*
-        Center div horrizontally on the screen
-        ======================================
-      */
       .horrizontally-centered {
         display: inline-block; /* Makes the div don't take up more space than its content */
         color: powderblue;
@@ -27,10 +23,8 @@
         text-align: center;
       }
 
-      /*
-        Center child div horrizontally and vertically in parent div
-        ===========================================================
-      */
+      /* Center child div horrizontally and vertically in parent div */
+      
       .parent {
         display: flex;
         height: 300px;
@@ -48,6 +42,7 @@
         display: block;
         color: powderblue;
         text-align: center;
+        line-height: 48px;
       }
     </style>
   </head>
@@ -61,7 +56,13 @@
 		<div class="parent">
 			<div class="child">
 				<span>child div center of parent</span>
+        <div>these are 2 lines</div>
+        <div>these are 2 lines</div>
 			</div>
 		</div>
+
+    <div class="back-button">Back</div>
+
+    <script src="script.js"></script>
   </body>
 </html>

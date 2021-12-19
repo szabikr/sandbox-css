@@ -1,0 +1,9 @@
+.back-button {
+  background-color: lightcoral;
+  color:ghostwhite;
+  cursor: pointer;
+
+  display: inline-block;
+  padding: 6px 12px;
+  margin-top: 18px;
+}
