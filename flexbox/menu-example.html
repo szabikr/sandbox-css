@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Menu Example</title>
+
+    <style>
+      .menu {
+        display: flex;
+        justify-content: flex-start;
+
+        /* Removing all the predefined ul properties */
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .menu-item {
+        background-color: steelblue;
+        color: powderblue;
+
+        padding: 6px 12px;
+        margin: 18px 12px;
+      }
+
+      .menu .menu-item:last-child {
+        margin-right: 0;
+      }
+
+      .menu .menu-item:first-child {
+        margin-left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Menu Example</h1>
+
+    <ul class="menu">
+      <li class="menu-item">Home</li>
+      <li class="menu-item">Services</li>
+      <li class="menu-item">Pricing</li>
+      <li class="menu-item">About</li>
+      <li class="menu-item">Contact</li>
+    </ul>
+
+    <div class="back-button">Back</div>
+  </body>
+
+  <script src="script.js"></script>
+</html>
